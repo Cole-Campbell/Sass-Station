@@ -1,0 +1,26 @@
+//Underscore before the filename indicates to Sass that this is a partial file which can be imported using the @import function.
+
+//This is a mixin. A mixin allows the developer to create a snippet such as vendor prefixes and condense it into a single line to reduce the bulk of code. This is known as abstraction.
+
+=border-radius($radius)
+	webkit-border-radius: $radius
+	moz-border-radius: $radius
+	ms-border-radius: $radius
+	border-radius: $radius
+
+.box
+	+border-radius(10px)
+
+.message
+	border: 2px solid #ccc
+	padding: 10px
+	color: #444
+
+.success
+	//use the @extend to extend from other classes
+	@extend .message
+	color: green
+
+.failure
+	@extend .message
+	color: red

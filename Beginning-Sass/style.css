@@ -1,0 +1,42 @@
+.box {
+  webkit-border-radius: 10px;
+  moz-border-radius: 10px;
+  ms-border-radius: 10px;
+  border-radius: 10px; }
+
+.message, .success, .failure {
+  border: 2px solid #ccc;
+  padding: 10px;
+  color: #444; }
+
+.success {
+  color: green; }
+
+.failure {
+  color: red; }
+
+p {
+  Color: #cc504a; }
+  p a {
+    color: #333333; }
+    p a:hover {
+      color: #cc504a; }
+
+h1 {
+  font-size: 100px; }
+
+a {
+  color: #fe4da3; }
+
+.container {
+  width: 100%; }
+
+.mainBox[role="main"] {
+  float: left;
+  width: 62.5%; }
+
+.secondBox[role="second"] {
+  float: right;
+  width: 31.25%; }
+
+/*# sourceMappingURL=style.css.map */

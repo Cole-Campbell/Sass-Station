@@ -1,0 +1,34 @@
+//Declaring Variables up here. These variables can be used throughout the sass file. This will make for easier development as colours can be changed with only one change and not many. Will no longer have to rely on text-editor features such as find & replace all.
+$mainColor: #cc504a
+$secondColor: #333333
+$thirdColor: #fe4da3
+
+//Importing a partial file using @import
+@import boxStyle
+
+p
+	Color: $mainColor
+
+	//Nesting components relating to P tags. This reduces extra code as I will no longer have to specify a tags within P tags by going through the heirarchy of p<a, and then adding properties for the different states of the link.
+	a
+		color: $secondColor
+		
+		&:hover
+			color: $mainColor
+h1
+	font-size: 100px
+
+a
+	color: $thirdColor
+
+//Used basic math to create a 960px grid within taking out a calculator! This is easily achieved through Sass as operators are available for use. This can reduce lines for having to do simple calculations for things such as this width.
+.container
+	width: 100%
+
+.mainBox[role="main"]
+	float: left
+	width: 600px/960px * 100%
+
+.secondBox[role="second"]
+	float: right
+	width: 300px/960px * 100%
