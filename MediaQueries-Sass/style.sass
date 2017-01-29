@@ -1,0 +1,48 @@
+$width: 85%
+
+#container
+	width: $width
+	margin: 0px auto
+
+.box
+	border: 1px solid #333
+	padding: 10px
+	margin: 5px
+	@media screen and (max-width: 500px)
+		margin: 5px 0px
+		padding: 10px 0px
+
+.article[role="main"]
+	width: 60%
+	float: left
+	@media screen and (max-width: 500px)
+		width: 100%
+		margin: 10px, 0px
+
+.side[role="secondary"]
+	width: 30%
+	float: right
+	@media screen and (max-width: 500px)
+		width: 100%
+		float: left
+
+.display
+	display: block
+	width: $width/2
+	float: left
+	border: 1px solid #ccc
+	padding: 5px
+	margin: 1%
+	background-color: #fffeeb
+	@media screen and (min-width: 768px)
+		width: $width/4
+		
+
+	img
+		width: 100%
+	
+	p
+		text-align: center
+		font-family: Georgia
+		font-size: 20px
+		color: #333
