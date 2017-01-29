@@ -35,7 +35,7 @@
   padding: 5px;
   margin: 1%;
   background-color: #fffeeb; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 820px) {
     .display {
       width: 21.25%; } }
   .display img {
