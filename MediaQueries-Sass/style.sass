@@ -1,13 +1,15 @@
-$width: 85%
+$width: 80%
 
 #container
 	width: $width
 	margin: 0px auto
+	border: 1px solid red
 
 .box
 	border: 1px solid #333
 	padding: 10px
-	margin: 5px
+	width: 20%
+	float: left
 	@media screen and (max-width: 500px)
 		margin: 5px 0px
 		padding: 10px 0px
@@ -28,15 +30,19 @@ $width: 85%
 
 .display
 	display: block
-	width: $width/2
-	float: left
+	width: 23%
 	border: 1px solid #ccc
-	padding: 5px
-	margin: 1%
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
 	background-color: #fffeeb
-	@media screen and (min-width: 820px)
-		width: $width/4
-		
+	margin: 1%
+	padding: 1%
+	float: left
+	@media screen and (max-width: 820px)
+		width: 48%
+	@media screen and (max-width: 600px)
+		width: 98%
 
 	img
 		width: 100%
