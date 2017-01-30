@@ -1,7 +1,15 @@
-#container {
-  width: 80%;
-  margin: 0px auto;
-  border: 1px solid red; }
+*{
+   -moz-box-sizing: border-box;
+    -webkkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+  margin: 20px;
+    border: 3px solid black;
+    width: 520px; }
 
 .box {
   border: 1px solid #333;
@@ -53,5 +61,12 @@
     font-family: Georgia;
     font-size: 20px;
     color: #333; }
+
+
+.clear:after {
+    clear: both;
+    content: "";
+    display: table;
+}
 
 /*# sourceMappingURL=style.css.map */
